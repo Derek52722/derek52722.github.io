@@ -50,10 +50,30 @@ table {
 	right: 75px;
 }
 .menu-table td a{
-	color: #1bc0e7;
+	color: #1cc9f1;
 	display: inline;
 }
-.content {
+.content-container {
+	margin: 0 auto;
 	margin-top: 60px;
 	max-width: 1024px;
+	font-family: "Microsoft YaHei"  !important;
+	text-align: center;
+}
+.content {
+	width: 900px;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+.main-content {
+	padding: 40px 18px 40px 18px;
+	color: #73bfbf;
+	text-align: left;
+}
+.title {
+	font-size: 2.4em;
+	font-weight: bold;
+}
+.subtitle {
+	font-size: 1.4em;
 }
