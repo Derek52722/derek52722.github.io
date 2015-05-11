@@ -1,0 +1,59 @@
+body {
+	background-color: #1b1f37;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 62.5%;
+	font-family: Helvetica;
+}
+a {
+	text-decoration: none;
+}
+table {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-spacing: 0;
+}
+.clear {
+	clear: both;
+}
+.header {
+	margin: 0 auto;
+}
+.banner {
+	height: 600px;
+	width: 1024px;
+	margin: 0 auto;
+	border: 1px solid black;
+	background: url("../resources/Team_Example_banner.png") no-repeat scroll ;
+}
+.login-bar {
+	float: right;
+	color: white;
+	position: relative;
+	right: 81px;
+	top: 15px;
+}
+.login-span  a{
+	font-size: 1.471em;
+	color: #d2d4c9;
+}
+.login-span  span{
+	font-size: 1.471em;
+	color: #d2d4c9;
+}
+.menu {
+	position: relative;
+	float: right;
+	top: 94px;
+	right: 75px;
+}
+.menu-table td a{
+	color: #1bc0e7;
+	display: inline;
+}
+.content {
+	margin-top: 60px;
+	max-width: 1024px;
+}
