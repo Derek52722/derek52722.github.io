@@ -1,5 +1,5 @@
 body {
-	background-color: #1b1f37;
+	background-color: #121525;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -19,56 +19,88 @@ table {
 	clear: both;
 }
 .header {
+	position: relative;
 	margin: 0 auto;
 }
 .banner {
-	height: 600px;
-	width: 1024px;
 	margin: 0 auto;
-	border: 1px solid black;
-	background: url("../resources/Team_Example_banner.png") no-repeat scroll ;
+	height: 600px;
+	width: 100%;
+	background: url("../resources/igem_header_image.png") no-repeat ;
+	background-size: 100% 100%;
 }
-.login-bar {
+.igem_logo {
+	position: absolute;
+	left: 9%;
+	width: 141px;
+	height: 157px;
+	background: url("../resources/igem_logo.png") no-repeat ;
+}
+.team_logo {
+	margin: 0 auto;
+	width: 257px;
+	height: 240px;
+	background: url("../resources/team_logo.png") no-repeat ;
+}
+.menu_left {
+	float: left;
+	margin-top: 100px;
+	height: 30px;
+	width: 8%;
+	line-height: 30px;
+	background-color: #0b0c16;
+ 	filter:alpha(opacity=90);  
+     -moz-opacity:0.9;  
+     -khtml-opacity: 0.9;  
+     opacity: 0.9; 
+}
+.menu_right {
 	float: right;
-	color: white;
-	position: relative;
-	right: 81px;
-	top: 15px;
+	margin-top: 100px;
+	height: 30px;
+	width: 80%;
+	line-height: 30px;
+	background-color: #0b0c16;
+ 	filter:alpha(opacity=90);  
+     -moz-opacity:0.9;  
+     -khtml-opacity: 0.9;  
+     opacity: 0.9; 
 }
-.login-span  a{
-	font-size: 1.471em;
-	color: #d2d4c9;
-}
-.login-span  span{
-	font-size: 1.471em;
-	color: #d2d4c9;
-}
-.menu {
-	position: relative;
-	float: right;
-	top: 94px;
-	right: 75px;
+.menu-table {
+	margin: 0 auto;
 }
 .menu-table td a{
 	color: #1cc9f1;
 	display: inline;
 }
+
+/* ----主要内容部分----- */
 .content-container {
+	min-height: 230px;
 	margin: 0 auto;
-	margin-top: 60px;
-	max-width: 1024px;
 	font-family: "Microsoft YaHei"  !important;
 	text-align: center;
 }
-.content {
+.main-container {
+	position: absolute;
+	left: 50%;
+	top: 256px;
+	margin-left: -450px;
 	width: 900px;
-	background-color: #ffffff;
-	margin: 0 auto;
+	min-height: 600px;
+	background-color: #313131;
+
+	filter:alpha(opacity=40);  
+     -moz-opacity:0.4;  
+     -khtml-opacity: 0.4;  
+     opacity: 0.4; 
+
+     border-radius: 9px;
+     -moz-border-radius: 9px;
+     -webkit-border-radius: 9px;
 }
-.main-content {
-	padding: 40px 18px 40px 18px;
-	color: #73bfbf;
-	text-align: left;
+.content {
+	
 }
 .title {
 	font-size: 2.4em;
@@ -76,4 +108,22 @@ table {
 }
 .subtitle {
 	font-size: 1.4em;
+}
+
+/* ----主要内容部分----- */
+
+.footer {
+	margin: 0 auto;
+	height: 300px;
+	width: 100%;
+	background: url("../resources/igem_footer_image.png") no-repeat ;
+	background-size: 100% 100%;
+}
+.team_info {
+	padding-top: 147px;
+	color: #ffffff;
+	filter:alpha(opacity=24);  
+     -moz-opacity:0.24;  
+     -khtml-opacity: 0.24;  
+     opacity: 0.24; 
 }
