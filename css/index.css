@@ -66,6 +66,9 @@ table {
      -khtml-opacity: 0.9;  
      opacity: 0.9; 
 }
+.menu-bar {
+	margin-right: 27px;
+}
 .menu-table {
 	margin: 0 auto;
 }
@@ -85,8 +88,8 @@ table {
 	position: absolute;
 	left: 50%;
 	top: 256px;
-	margin-left: -450px;
-	width: 900px;
+	margin-left: -45%;
+	width: 90%;
 	min-height: 600px;
 	background-color: #313131;
 
