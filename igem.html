@@ -6,6 +6,24 @@
 		<meta http-equiv="cache-control" content="no-cache">
 		<title>iGEM - Champion Park</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(function($) {
+				/*   下拉菜单 */
+				$(".menu-table td").bind("mouseover", function() {	
+					$(this).children(".menu-list").slideDown();
+				});
+				$(".menu-table td").bind("mouseleave", function() {
+					$(this).children(".menu-list").slideUp();
+				});
+
+				/* 菜单点击事件 */
+				$(".menu-list li").bind('click', function() {
+					$(".menu-tag").css('border-bottom', 'none');	//清除所有下划线
+					$(this).parent().siblings('.menu-tag').css('border-bottom', '3px solid #a4e9f9');	//在对应父菜单条目下添加下划线
+				});
+			});
+		</script>
 	</head>
 	<body >
 		<div class="container">
@@ -20,12 +38,51 @@
 								<table class="menu-table">
 									<tbody>
 										<tr>
-											<td style="width:60px"><a href="index.html"> HOME </a></td>
-											<td style="width:90px"><a href="#"> PROJECT </a></td>
-											<td style="width:115px"><a href="#"> ACHIEVEMENT </a></td>
-											<td style="width:152px"><a href="#"> POCLICY &amp; PRACTIES </a></td>
-											<td style="width:86px"><a href="#"> TEAM </a></td>
-											<td style="width:139px"><a href="#"> SAFETY &amp; PROTOCOLS </a></td>
+											<td style="width:60px">
+												<p class="menu-tag" href="#"> HOME </p>
+												<ul class="menu-list">
+													<li> XXXXX </li>
+													<li> XXXXX </li>
+												</ul>
+											</td>
+											<td style="width:90px">
+												<p class="menu-tag"> PROJECT </p>
+												<ul class="menu-list">
+													<li> XXXXX </li>
+													<li> XXXXX </li>
+												</ul>
+											</td>
+											<td style="width:115px">
+												<p class="menu-tag"> ACHIEVEMENT </p>
+												<ul class="menu-list">
+													<li> XXXXX </li>
+													<li> XXXXX </li>
+												</ul>
+											</td>
+											<td style="width:152px">
+												<p class="menu-tag"> POCLICY &amp; PRACTIES </p>
+												<ul class="menu-list">
+													<li> XXXXX </li>
+													<li> XXXXX </li>
+												</ul>
+											</td>
+											<td style="width:86px">
+												<p class="menu-tag"> TEAM </p>
+												<ul class="menu-list">
+													<li> Team Member </li>
+													<li> Collaboration </li>
+													<li> Attributions </li>
+													<li> Contact Us </li>
+													<li style="line-height:14px"> Offical</br>Team Profile </li>
+												</ul>
+											</td>
+											<td style="width:153px">
+												<p class="menu-tag"> SAFETY &amp; PROTOCOLS </p>
+												<ul class="menu-list">
+													<li> XXXXX </li>
+													<li> XXXXX </li>
+												</ul>
+											</td>
 										</tr>
 									</tbody>
 								</table>
@@ -38,6 +95,7 @@
 				</div>
 			</div>
 			<div class="content-container">
+				<div class="container-shade"></div>
 				<div class="main-container">
 					<div class="content">
 						<!-- <p class="title"> Title 大标题 微软雅黑</p>
@@ -49,9 +107,9 @@
 				<div class="team_info">
 					Team Email: scut-champion-park@hotmail.com <br/><br/>
 					Address: School of Bioscience & Bioengineering <br/>
-					South China University of Technology, Building B6 <br/>
-					Guangzhou Higher Education Mega Centre, <br/>
-					Panyu District, Guangzhou, China <br/>
+					South China University of Technology, Building B6 Guangzhou<br/>
+					Higher Education Mega Centre, Panyu District,<br/>
+					Guangzhou, China <br/>
 				</div>
 			</div>
 		</div>

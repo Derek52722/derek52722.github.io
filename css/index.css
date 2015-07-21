@@ -1,5 +1,5 @@
 body {
-	background-color: #121525;
+	background-color: #1b1f37;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -24,16 +24,16 @@ table {
 }
 .banner {
 	margin: 0 auto;
-	height: 600px;
+	min-height: 600px;
 	width: 100%;
 	background: url("../resources/igem_header_image.png") no-repeat ;
-	background-size: 100% 100%;
+	background-size: 100%;
 }
 .igem_logo {
 	position: absolute;
-	left: 9%;
-	width: 141px;
-	height: 157px;
+	left: 10%;
+	width: 105px;
+	height: 141px;
 	background: url("../resources/igem_logo.png") no-repeat ;
 }
 .team_logo {
@@ -44,63 +44,105 @@ table {
 }
 .menu_left {
 	float: left;
-	margin-top: 100px;
-	height: 30px;
+	margin-top: 99px;
+	height: 42px;
 	width: 8%;
-	line-height: 30px;
-	background-color: #0b0c16;
- 	filter:alpha(opacity=90);  
-     -moz-opacity:0.9;  
-     -khtml-opacity: 0.9;  
-     opacity: 0.9; 
+	line-height: 42px;
+	background-color: #000000;
+ 	filter:alpha(opacity=75);  
+     -moz-opacity:0.75;  
+     -khtml-opacity: 0.75;  
+     opacity: 0.75; 
 }
 .menu_right {
 	float: right;
-	margin-top: 100px;
-	height: 30px;
+	margin-top: 99px;
+	height: 42px;
 	width: 80%;
-	line-height: 30px;
-	background-color: #0b0c16;
- 	filter:alpha(opacity=90);  
-     -moz-opacity:0.9;  
-     -khtml-opacity: 0.9;  
-     opacity: 0.9; 
+	line-height: 42px;
+	background-color: #000000;
+ 	filter:alpha(opacity=75);  
+     -moz-opacity:0.75;  
+     -khtml-opacity: 0.75;  
+     opacity: 0.75; 
 }
 .menu-bar {
-	margin-right: 27px;
+	margin-right: 20px;
 }
 .menu-table {
 	margin: 0 auto;
 }
-.menu-table td a{
-	color: #1cc9f1;
-	display: inline;
+.menu-table td {
+	vertical-align: top;
 }
-
+.menu-table td p{
+	color: #1cc9f1;
+  	display: inline-block;
+  	font-size: 1.3em;
+  	font-weight: bold;
+  	height: 32px;
+  	margin: 0;
+  	padding: 0;
+}
+.menu-table td p:hover {
+	cursor: pointer;
+}
+.menu-list {
+	margin:-4px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: none;
+}
+.menu-list li {
+	text-align: center;
+	line-height: 20px;
+	margin-bottom: 2px;
+	color: #1b1f3a;
+	background-color: #a4e9f9;
+	font-size: 1.2em;
+}
+.menu-list li:hover{
+	color: #77dff7;
+	background-color: #1b1f3a;
+	cursor: pointer;
+}
 /* ----主要内容部分----- */
 .content-container {
-	min-height: 230px;
+	min-height: 345px;
 	margin: 0 auto;
 	font-family: "Microsoft YaHei"  !important;
 	text-align: center;
 }
+.container-shade {
+	position: absolute;
+	left: 50%;
+	top: 173px;
+	margin-left: -45%;
+	width: 90%;
+	height: 206px;
+	background: url("../resources/container_shade.png") no-repeat;
+	background-size: 100%;
+}
 .main-container {
 	position: absolute;
 	left: 50%;
-	top: 256px;
+	top: 379px;
 	margin-left: -45%;
 	width: 90%;
-	min-height: 600px;
-	background-color: #313131;
+	min-height: 612px;
+	background-color: #000000;
 
-	filter:alpha(opacity=40);  
-     -moz-opacity:0.4;  
-     -khtml-opacity: 0.4;  
-     opacity: 0.4; 
+	filter:alpha(opacity=60);  
+     -moz-opacity:0.60;  
+     -khtml-opacity: 0.60;  
+     opacity: 0.60; 
 
-     border-radius: 9px;
-     -moz-border-radius: 9px;
-     -webkit-border-radius: 9px;
+     border-bottom-left-radius: 9px;
+     -moz-border-bottom-left-radius: 9px;
+     -webkit-border-bottom-left-radius: 9px;
+     border-bottom-right-radius: 9px;
+     -moz-border-bottom-right-radius: 9px;
+     -webkit-border-bottom-right-radius: 9px;
 }
 .content {
 	
@@ -117,13 +159,13 @@ table {
 
 .footer {
 	margin: 0 auto;
-	height: 300px;
+	min-height: 160px;
 	width: 100%;
 	background: url("../resources/igem_footer_image.png") no-repeat ;
 	background-size: 100% 100%;
 }
 .team_info {
-	padding-top: 147px;
+	padding-top: 66px;
 	color: #ffffff;
 	filter:alpha(opacity=24);  
      -moz-opacity:0.24;  
