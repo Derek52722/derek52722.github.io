@@ -5,11 +5,14 @@ body {
 }
 .cs-content-container {
 	margin: 0 auto;
+	padding-top: 43px;
+	padding-bottom: 53px;
 	width: 1024px;
 }
 .cs-main-content {
 	margin: 0 auto;
-	width: 672px;
+	width: 668px;
+	text-align: left;
 }
 .cs-font {
 	font-size: 1.4em;
