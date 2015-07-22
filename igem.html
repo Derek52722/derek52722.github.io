@@ -8,7 +8,18 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript">
+			function setElementSize() {	//动态设置各元素尺寸
+				var doc_width = $(document).width();
+				var header_width = doc_width * 0.4887;
+				var footer_width = doc_width * 0.1541;
+
+				$(".banner").css('min-height', header_width);	//设置header背景图片高度
+				$(".footer").css('min-height', footer_width);		//设置footer背景图片高度
+			}
+
 			$(function($) {
+				setElementSize();
+
 				/*   下拉菜单 */
 				$(".menu-table td").bind("mouseover", function() {	
 					$(this).children(".menu-list").slideDown();
@@ -21,6 +32,27 @@
 				$(".menu-list li").bind('click', function() {
 					$(".menu-tag").css('border-bottom', 'none');	//清除所有下划线
 					$(this).parent().siblings('.menu-tag').css('border-bottom', '3px solid #a4e9f9');	//在对应父菜单条目下添加下划线
+
+					var li_obj = $(this);
+					var url = './' + $(this).attr('url');		//获取页面url
+					$.ajax({
+						url: 		url,
+						type: 		'GET',
+						success:   function(html){
+							$(".content").html(html);
+						 }
+
+					})
+					.done(function() {
+						console.log("success");
+
+					})
+					.fail(function() {
+						console.log("error");
+					})
+					.always(function() {
+						console.log("complete");
+					});
 				});
 			});
 		</script>
@@ -69,10 +101,10 @@
 											<td style="width:86px">
 												<p class="menu-tag"> TEAM </p>
 												<ul class="menu-list">
-													<li> Team Member </li>
+													<li url="team_member.html"> Team Member </li>
 													<li> Collaboration </li>
 													<li> Attributions </li>
-													<li> Contact Us </li>
+													<li url="contact_us.html"> Contact Us </li>
 													<li style="line-height:14px"> Offical</br>Team Profile </li>
 												</ul>
 											</td>
@@ -94,12 +126,18 @@
 					<div class="clear"> </div>
 				</div>
 			</div>
+
+			<!---        黑色遮罩层       -->
+			<div class="container-decorator">
+				<div class="container-decorator-shade"></div>
+				<div class="container-decorator-content"></div>
+			</div>
+			<!---        黑色遮罩层       -->
+
 			<div class="content-container">
-				<div class="container-shade"></div>
 				<div class="main-container">
 					<div class="content">
-						<!-- <p class="title"> Title 大标题 微软雅黑</p>
-						<p class="subtitle"> Subtitle 小标题 </p> -->
+						
 					</div>
 				</div>
 			</div>
