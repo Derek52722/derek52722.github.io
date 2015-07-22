@@ -3,14 +3,17 @@ body {
 	padding: 0;
 	font-size: 62.5%;
 }
+.cs-content-container {
+	margin: 0 auto;
+	width: 1024px;
+}
 .cs-main-content {
-	margin: 43px 118px 53px 118px;
-
+	margin: 0 auto;
+	width: 672px;
 }
 .cs-font {
 	font-size: 1.4em;
 	font-family: "Microsoft YaHei"  !important;
-	font-weight: 600;
 	color: #7be0f7;
 	line-height: 25px;
 }
