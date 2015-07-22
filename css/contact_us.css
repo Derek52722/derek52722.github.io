@@ -1,0 +1,68 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+}
+.cs-main-content {
+	margin: 43px 118px 53px 118px;
+
+}
+.cs-font {
+	font-size: 1.4em;
+	font-family: "Microsoft YaHei"  !important;
+	font-weight: 600;
+	color: #7be0f7;
+	line-height: 25px;
+}
+.cs-abstract {
+	margin-bottom: 43px;
+}
+.cs-abstract-img {
+	background-image: url("../resources/contactus.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	width: 68px;
+	height: 63px;
+	display: inline-block;
+	vertical-align: top;
+}
+.cs-info {
+	margin-left: 44px;
+	margin-bottom: 16px;
+	width: 578px;
+}
+.cs-abstract-detail {
+	margin-top: 16px;
+	margin-left: 16px;
+	display: inline-block;
+}
+.cs-info-img {
+	background-image: url("../resources/contactus.png");
+	background-repeat: no-repeat;
+	background-position: -43px -147px;
+	width: 62px;
+	height: 87px;
+	display: inline-block;
+	vertical-align: top;
+}
+.cs-info-detail {
+	display: inline-block;
+}
+.cs-wechat {
+	margin-left: 44px;
+	width: 578px;
+}
+.cs-wechat-img {
+	background-image: url("../resources/contactus.png");
+	background-repeat: no-repeat;
+	background-position: -41px -307px;
+	width: 64px;
+	height: 59px;
+	display: inline-block;
+	vertical-align: top;
+}
+.cs-wechat-detail {
+	display: inline-block;
+	margin-left:8px;
+	margin-top: 5px;
+}

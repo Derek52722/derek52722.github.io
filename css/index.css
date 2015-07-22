@@ -116,22 +116,20 @@ table {
 	margin: 0 auto;
 }
 .container-decorator-shade {
-	position: absolute;
+	position: relative;
 	left: 50%;
-	top: 173px;
-	margin-left: -45%;
-	width: 90%;
+	margin-left: -512px;
+	width: 1024px;
 	height: 206px;
 	background: url("../resources/container_shade.png") no-repeat;
 	background-size: 100%;
 	z-index: 0;
 }
 .container-decorator-content {
-	position: absolute;
+	position: relative;
 	left: 50%;
-	top: 379px;
-	margin-left: -45%;
-	width: 90%;
+	margin-left: -512px;
+	width: 1024px;
 	min-height: 587px;
 	background-color: #000000;
 	z-index: 0;
@@ -159,11 +157,10 @@ table {
 	z-index: 666;
 }
 .main-container {
-	position: absolute;
+	position: relative;
 	left: 50%;
-	top: 173px;
-	margin-left: -45%;
-	width: 90%;
+	margin-left: -512px;
+	width: 1024px;
 	min-height: 818px;
 }
 .content {
@@ -173,7 +170,6 @@ table {
 /* ----主要内容部分----- */
 
 .footer {
-	margin: 0 auto;
 	min-height: 200px;
 	width: 100%;
 	background: url("../resources/igem_footer_image.png") no-repeat ;
