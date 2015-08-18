@@ -16,8 +16,8 @@
 				$(".banner").css('min-height', header_width);	//设置header背景图片高度
 				$(".footer").css('min-height', footer_width);		//设置footer背景图片高度
 				$(".container-decorator").css('margin-top', -(header_width-175));	//设置遮罩层高度
-				$(".container-decorator-content ").css('height', $(".content-container").height()-206);	//设置主遮罩层宽度
-				$(".content-container").css('margin-top', -$(".container-decorator").height());	//设置main-container高度
+				$(".container-decorator-content").css('height', $(".content-decorator").height()-206);	//设置主遮罩层高度
+				$(".content-container").css('margin-top', -$(".container-decorator-content").height()-206);	//设置main-container高度
 			}
 
 			$(function($) {
@@ -38,11 +38,15 @@
 
 					var li_obj = $(this);
 					var url = './' + $(this).attr('url');		//获取页面url
+					var page_height = $(this).attr("page-height");		//获取页面高度
+
 					$.ajax({
 						url: 		url,
 						type: 		'GET',
 						success:   function(html){
 							$(".content").html(html);
+							$('.container-decorator-content').height(page_height-206);
+							$('.content-container').css('margin-top', -$('.container-decorator-content').height()-206);	//设置main-container高度
 						 }
 
 					})
@@ -97,6 +101,7 @@
 												<ul class="menu-list">
 													<li> Over View </li>
 													<li> Meet Ups </li>
+													<li url="super_brochure.html" page-height="1348"> Super Brochure </li>
 												</ul>
 											</td>
 											<td style="width:86px">
@@ -104,7 +109,7 @@
 												<ul class="menu-list">
 													<li url="team_member.html"> Team Member </li>
 													<li> Attributions </li>
-													<li url="contact_us.html"> Contact Us </li>
+													<li url="contact_us.html" page-height="483"> Contact Us </li>
 													<li style="line-height:14px"> Offical</br>Team Profile </li>
 												</ul>
 											</td>

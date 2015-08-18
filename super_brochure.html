@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/super_brochure.css"/>
+		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div class="sb-container">
+			<table>
+				<tbody>
+					<tr>
+						<td><img src="resources/super_brochure/0.jpg" width="301px" height="402px"></td>
+						<td><img src="resources/super_brochure/1.jpg" width="301px" height="402px"></td>
+						<td><img src="resources/super_brochure/2.jpg" width="301px" height="402px"></td>
+					</tr>
+					<tr>
+						<td><img src="resources/super_brochure/3.jpg" width="301px" height="402px"></td>
+						<td><img src="resources/super_brochure/4.jpg" width="301px" height="402px"></td>
+						<td><img src="resources/super_brochure/5.jpg" width="301px" height="402px"></td>
+					</tr>
+					<tr>
+						<td><img src="resources/super_brochure/6.jpg" width="301px" height="402px"></td>
+						<td><img src="resources/super_brochure/7.jpg" width="301px" height="402px"></td>
+						<td><img src="resources/super_brochure/8.jpg" width="301px" height="402px"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="sb-shade"></div>
+		<div class="sb-large-img"><img width="750px" height="1002px"></div>
+		<script type="text/javascript">
+			$("td img").bind('click', function() {
+				var src = $(this).attr('src');
+				$(".sb-large-img img").attr("src", src);	//获取路径
+				
+				$(".sb-shade").fadeIn();
+				$(".sb-large-img").fadeIn();
+			});
+			$(".sb-large-img").bind('click', function() {
+				$(this).fadeOut();
+				$(".sb-shade").fadeOut();
+				$("body").css('overflow-y', 'scroll');	//隐藏滚动条
+			});
+		</script>
+	</body>
+</html>

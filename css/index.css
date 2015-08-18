@@ -5,6 +5,7 @@ body {
 	text-align: center;
 	font-size: 62.5%;
 	font-family: Helvetica;
+	overflow-x: hidden; 
 }
 a {
 	text-decoration: none;
@@ -161,7 +162,7 @@ table {
 	left: 50%;
 	margin-left: -512px;
 	width: 1024px;
-	min-height: 818px;
+	min-height: 793px;
 }
 .content {
 	padding: 0px;
@@ -175,6 +176,7 @@ table {
 	background: url("../resources/igem_footer_image.png") no-repeat ;
 	background-size: 100% 100%;
 	font-family: "Microsoft YaHei"  !important;
+	margin-top: 25px;
 }
 .team_info {
 	padding-top: 44px;
@@ -183,4 +185,9 @@ table {
      -moz-opacity:0.24;  
      -khtml-opacity: 0.24;  
      opacity: 0.24; 
+}
+.sb-shade {
+	position: absolute;
+	top: 0px;
+	left: 0px
 }
