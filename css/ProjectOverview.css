@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+p{
+	font-size:13px;
+	color:white;
+	float:left;
+	text-align:justify;
+	}
+
+#background{
+	width:400px;
+	height:240px;
+	background:url(../resources/Project-Overview-bg.png) no-repeat;
+}
+	
+#background-text{
+	margin-left:30px;
+	width:564px;
+	height:240px;
+}
+
+#motivation-text{	
+	width:555px;
+	height:330px;
+}
+	
+#chemical{
+	width:350px;
+	height:330px;
+	margin-left:40px;
+	background:url(../resources/Project-Overview-Tetracycline.png) no-repeat 0 60px;
+}
+
+#proposal{
+	width:inherit;
+	height:260px;
+	background:url(../resources/Project-Overview-Proposal.png) no-repeat 0 -10px;
+}
+
+
+.region{
+	padding:15px;
+	}
+	
+.sub-region{
+	float:left;
+	}
+.line-space{
+	width:inherit;
+	height:30px;
+	clear:both;
+	}
+.right-region{
+	}
+	
+.h1blue{
+	color:#1cbde4;
+	font-size:24px;
+	font-weight:bold;
+	text-align:left;
+}
+
+.noshade{
+	height:200px;
+	}
+#Attribution{
+	width:inherit;
+	height:80px;
+
+	margin-bottom:20px;
+}
+#people{
+	background:url(../resources/attributions-people.png) no-repeat;
+	width:inherit;
+	height:350px;
+	}
+
+#Attribution-text{
+	width:inherit;
+	height:295px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.shade{
+	background:url(../resources/attributions-shade.png);
+     border-radius:9px;
+     -moz-border-radius:9px;
+     -webkit-border-radius:9px;
+	}
+#For-Details{
+	width:inherit;
+	height:670px;
+	padding-left:15px;
+	padding-right:15px;
+}	
+	
+.h4title{
+	font-size:14px;
+	line-height:8px;
+	color:#1ba7cb;
+	text-align:left;
+	padding-top:15px;
+}
+
+#meetsup-1{
+	width:inherit;
+	height:840px;
+	margin-bottom:20px;
+}
+
+#meetsup-2{
+	width:inherit;
+	height:640px;
+	margin-bottom:20px;
+}
+
+.h2title{
+	color:#1cbde4;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+
+.inner-region{
+	width:780px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+.pic1{
+	float:left;
+	width:380px;
+	}
+		
+.pic2{
+	float:right;
+	width:380px;
+	}
+	
+.pic3{
+	float:right;
+	margin-top:20px;
+	}
