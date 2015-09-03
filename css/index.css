@@ -30,50 +30,29 @@ table {
 	background: url("../resources/igem_header_image.png") no-repeat ;
 	background-size: 100%;
 }
-.igem_logo {
-	position: absolute;
-	left: 10%;
-	width: 105px;
-	height: 141px;
-	background: url("../resources/igem_logo.png") no-repeat ;
-}
 .team_logo {
 	margin: 0 auto;
 	width: 257px;
 	height: 240px;
 	background: url("../resources/team_logo.png") no-repeat ;
 }
-.menu_left {
+.menu {
 	float: left;
-	margin-top: 99px;
-	height: 42px;
-	width: 8%;
-	line-height: 42px;
-	background-color: #000000;
- 	filter:alpha(opacity=75);  
-     -moz-opacity:0.75;  
-     -khtml-opacity: 0.75;  
-     opacity: 0.75; 
-}
-.menu_right {
-	float: right;
-	margin-top: 99px;
-	height: 42px;
-	width: 80%;
-	line-height: 42px;
-	background-color: #000000;
- 	filter:alpha(opacity=75);  
-     -moz-opacity:0.75;  
-     -khtml-opacity: 0.75;  
-     opacity: 0.75; 
-     z-index: 333;
-     position: relative;
+	height: 142px;
+	width: 100%;
+	z-index: 333;
+	position: relative;
+	background: url("../resources/menu.png") no-repeat ;
+	background-position: 55.1% 0;
 }
 .menu-bar {
-	margin-right: 20px;
+	width: 1024px;
+	height: 42px;
+	line-height: 42px;
+	margin: 99px auto 0 auto;
 }
 .menu-table {
-	margin: 0 auto;
+	margin-left: 294px;
 }
 .menu-table td {
 	vertical-align: top;
@@ -87,7 +66,7 @@ table {
   	margin: 0;
   	padding: 0;
 }
-.menu-table td p:hover {
+.menu-table td span:hover {
 	cursor: pointer;
 }
 .menu-list {

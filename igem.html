@@ -39,14 +39,21 @@
 					var li_obj = $(this);
 					var url = './' + $(this).attr('url');		//获取页面url
 					var page_height = $(this).attr("page-height");		//获取页面高度
+					var is_special = $(this).attr("is-special");		// 获取页面属性
 
 					$.ajax({
 						url: 		url,
 						type: 		'GET',
 						success:   function(html){
 							$(".content").html(html);
-							$('.container-decorator-content').height(page_height-206);
-							$('.content-container').css('margin-top', -$('.container-decorator-content').height()-206);	//设置main-container高度
+							if (is_special == "True") {
+								$('.container-decorator').hide();
+								$('.content-container').css('margin-top', -456);	//设置main-container高度
+							} else {
+								$('.container-decorator').show();
+								$('.container-decorator-content').height(page_height-206);
+								$('.content-container').css('margin-top', -$('.container-decorator-content').height()-206);	//设置main-container高度
+							}
 						 }
 
 					})
@@ -71,59 +78,58 @@
 				<div class="banner">
 					<div class="clear"> </div>
 					<div class="menu">
-						<div class="menu_left"></div>
-						<div class="menu_right">
-							<div class="menu-bar">
-								<table class="menu-table">
-									<tbody>
-										<tr>
-											<td style="width:60px">
-												<span class="menu-tag" href="#"> HOME </span>
-												</ul>
-											</td>
-											<td style="width:90px">
-												<span class="menu-tag"> PROJECT </span>
-												<ul class="menu-list">
-													<li> Over View </li>
-												</ul>
-											</td>
-											<td style="width:115px">
-												<span class="menu-tag"> ACHIEVEMENT </span>
-												<ul class="menu-list">
-													<li> Results </li>
-													<li> Judging Form </li>
-													<li> Financing </li>
-													<li> Acknowledgement </li>
-												</ul>
-											</td>
-											<td style="width:152px">
-												<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
-												<ul class="menu-list">
-													<li> Over View </li>
-													<li> Meet Ups </li>
-													<li url="super_brochure.html" page-height="1348"> Super Brochure </li>
-												</ul>
-											</td>
-											<td style="width:86px">
-												<span class="menu-tag"> TEAM </span>
-												<ul class="menu-list">
-													<li url="team_member.html"> Team Member </li>
-													<li> Attributions </li>
-													<li url="contact_us.html" page-height="483"> Contact Us </li>
-													<li style="line-height:14px"> Offical</br>Team Profile </li>
-												</ul>
-											</td>
-											<td style="width:153px">
-												<span class="menu-tag"> SAFETY &amp; PROTOCOLS </span>
-												<ul class="menu-list">
-													<li> Safety </li>
-													<li> Protocols </li>
-												</ul>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+						<div class="menu-bar">
+							<table class="menu-table">
+								<tbody>
+									<tr>
+										<td style="width:60px">
+											<span class="menu-tag" href="#"> HOME </span>
+											</ul>
+										</td>
+										<td style="width:90px">
+											<span class="menu-tag"> PROJECT </span>
+											<ul class="menu-list">
+												<li> Over View </li>
+											</ul>
+										</td>
+										<td style="width:115px">
+											<span class="menu-tag"> ACHIEVEMENT </span>
+											<ul class="menu-list">
+												<li> Results </li>
+												<li> Judging Form </li>
+												<li> Financing </li>
+												<li> Acknowledgement </li>
+											</ul>
+										</td>
+										<td style="width:152px">
+											<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
+											<ul class="menu-list">
+												<li> Over View </li>
+												<li> Meet Ups </li>
+												<li> Mentoring Program </li>
+												<li> Scient Visits </li>
+												<li url="super_brochure.html" page-height="1348" is-special="False"> Super Brochure </li>
+											</ul>
+										</td>
+										<td style="width:86px">
+											<span class="menu-tag"> TEAM </span>
+											<ul class="menu-list">
+												<li url="team_member.html" page-height="4557" is-special="True"> Team Member </li>
+												<li> Attributions </li>
+												<li url="contact_us.html" page-height="483" is-special="False"> Contact Us </li>
+												<li style="line-height:14px"> Offical</br>Team Profile </li>
+											</ul>
+										</td>
+										<td style="width:153px">
+											<span class="menu-tag"> SAFETY &amp; PROTOCOLS </span>
+											<ul class="menu-list">
+												<li> Safety </li>
+												<li> Protocols </li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 					<div class="igem_logo"></div>
@@ -149,7 +155,7 @@
 			<div class="footer">
 				<div class="team_info">
 					Team Email: scut-champion-park@hotmail.com <br/><br/>
-					Address: School of Bioscience & Bioengineering <br/>
+					Address: School of Bioscience &amp; Bioengineering <br/>
 					South China University of Technology, Building B6 Guangzhou<br/>
 					Higher Education Mega Centre, Panyu District,<br/>
 					Guangzhou, China <br/>
