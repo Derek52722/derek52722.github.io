@@ -43,7 +43,7 @@ table {
 	z-index: 333;
 	position: relative;
 	background: url("../resources/menu.png") no-repeat ;
-	background-position: 55.1% 0;
+	background-position: center;
 }
 .menu-bar {
 	width: 1024px;

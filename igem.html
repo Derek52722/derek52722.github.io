@@ -48,7 +48,10 @@
 							$(".content").html(html);
 							if (is_special == "True") {
 								$('.container-decorator').hide();
-								$('.content-container').css('margin-top', -456);	//设置main-container高度
+								var doc_width = $(document).width();
+								var header_width = doc_width * 0.4887;
+								var content_height = -header_width+240-65;
+								$('.content-container').css('margin-top', content_height);	//设置main-container高度
 							} else {
 								$('.container-decorator').show();
 								$('.container-decorator-content').height(page_height-206);
@@ -108,7 +111,7 @@
 											<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
 											<ul class="menu-list">
 												<li> Over View </li>
-												<li> Policy</li>
+												<li url="policy.html" page-height="6121" is-special="True"> Policy</li>
 												<li> Questionnaire </li>
 												<li> Research &amp; Solution</li>
 												<li> Meet Ups </li>
