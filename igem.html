@@ -48,9 +48,8 @@
 							$(".content").html(html);
 							if (is_special == "True") {
 								$('.container-decorator').hide();
-								var doc_width = $(document).width();
-								var header_width = doc_width * 0.4887;
-								var content_height = -header_width+240-65;
+								var header_height = $(".header").height();
+								var content_height = -header_height+240-65;
 								$('.content-container').css('margin-top', content_height);	//设置main-container高度
 							} else {
 								$('.container-decorator').show();
@@ -111,8 +110,7 @@
 											<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
 											<ul class="menu-list">
 												<li> Over View </li>
-												<li url="policy.html" page-height="6121" is-special="True"> Policy</li>
-												<li> Questionnaire </li>
+												<li url="policy.html" page-height="6141" is-special="True"> Policy</li>
 												<li> Research &amp; Solution</li>
 												<li> Meet Ups </li>
 												<li> Social Media </li>
@@ -134,7 +132,7 @@
 										<td style="width:153px">
 											<span class="menu-tag"> SAFETY &amp; PROTOCOLS </span>
 											<ul class="menu-list">
-												<li> Safety </li>
+												<li url="safety.html" page-height="2034" is-special="True"> Safety </li>
 											</ul>
 										</td>
 									</tr>

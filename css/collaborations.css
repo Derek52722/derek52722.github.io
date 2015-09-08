@@ -55,6 +55,11 @@ body {
 	text-align: justify;
 	margin: 0 0 31px 0;
 	line-height: 1.6;
+
+	filter:alpha(opacity=60);  
+     -moz-opacity:0.60;  
+     -khtml-opacity: 0.60;  
+     opacity: 0.60; 
 }
 .coll-content-img {
 	margin-bottom: 29px;
