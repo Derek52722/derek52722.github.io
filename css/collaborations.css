@@ -32,6 +32,7 @@ body {
 	font-family: "Microsoft YaHei"  !important;
 	text-align: center;
 	z-index: 666;
+	height: 1851px;
 }
 .coll-wrapper {
 	position: relative;
@@ -42,12 +43,12 @@ body {
 .coll-content {
 	width: 802px;
 	margin: 0 auto;
+	padding-top: 43px;
 }
 .coll-title {
 	font-size: 18px;
 	color: #1bb1d6;
-	margin-top: 43px;
-	margin-bottom: 27px
+	margin: 0 auto 27px;
 }
 .coll-main-content {
 	color: #ffffff;
@@ -56,10 +57,6 @@ body {
 	margin: 0 0 31px 0;
 	line-height: 1.6;
 
-	filter:alpha(opacity=60);  
-     -moz-opacity:0.60;  
-     -khtml-opacity: 0.60;  
-     opacity: 0.60; 
 }
 .coll-content-img {
 	margin-bottom: 29px;
