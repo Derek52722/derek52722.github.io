@@ -6,6 +6,7 @@
 		<meta http-equiv="cache-control" content="no-cache">
 		<title>iGEM - Champion Park</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/social_media.css">
 		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript">
 			function setElementSize() {	//动态设置各元素尺寸
@@ -15,9 +16,7 @@
 
 				$(".banner").css('min-height', header_width);	//设置header背景图片高度
 				$(".footer").css('min-height', footer_width);		//设置footer背景图片高度
-				$(".container-decorator").css('margin-top', -(header_width-175));	//设置遮罩层高度
-				$(".container-decorator-content").css('height', $(".content-decorator").height()-206);	//设置主遮罩层高度
-				$(".content-container").css('margin-top', -$(".container-decorator-content").height()-206);	//设置main-container高度
+				$(".main-container").css('margin-top', -(header_width-175));	//设置遮罩层高度
 			}
 
 			$(function($) {
@@ -29,46 +28,6 @@
 				});
 				$(".menu-table td").bind("mouseleave", function() {
 					$(this).children(".menu-list").slideUp();
-				});
-
-				/* 菜单点击事件 */
-				$(".menu-list li").bind('click', function() {
-					$(".menu-tag").css('border-bottom', 'none');	//清除所有下划线
-					$(this).parent().siblings('.menu-tag').css('border-bottom', '3px solid #a4e9f9');	//在对应父菜单条目下添加下划线
-
-					var li_obj = $(this);
-					var url = './' + $(this).attr('url');		//获取页面url
-					var page_height = $(this).attr("page-height");		//获取页面高度
-					var is_special = $(this).attr("is-special");		// 获取页面属性
-
-					$.ajax({
-						url: 		url,
-						type: 		'GET',
-						success:   function(html){
-							$(".content").html(html);
-							if (is_special == "True") {
-								$('.container-decorator').hide();
-								var header_height = $(".header").height();
-								var content_height = -header_height+240-65;
-								$('.content-container').css('margin-top', content_height);	//设置main-container高度
-							} else {
-								$('.container-decorator').show();
-								$('.container-decorator-content').height(page_height-206);
-								$('.content-container').css('margin-top', -$('.container-decorator-content').height()-206);	//设置main-container高度
-							}
-						 }
-
-					})
-					.done(function() {
-						console.log("success");
-
-					})
-					.fail(function() {
-						console.log("error");
-					})
-					.always(function() {
-						console.log("complete");
-					});
 				});
 			});
 		</script>
@@ -91,49 +50,49 @@
 										<td style="width:92px">
 											<span class="menu-tag"> PROJECT </span>
 											<ul class="menu-list">
-												<li> Over View </li>
-												<li> Notebook </li>
-												<li> Protocols </li>
-												<li> Design </li>
+												<li><a href=""> Over View </a></li>
+												<li><a href=""> Protocols </a></li>
+												<li><a href=""> Design </a></li>
 											</ul>
 										</td>
 										<td style="width:125px">
 											<span class="menu-tag"> ACHIEVEMENT </span>
 											<ul class="menu-list">
-												<li> Results </li>
-												<li> Registry Part </li>
-												<li> Judging Form </li>
-												<li> Financing </li>
-												<li> Acknowledgement </li>
+												<li><a href=""> Results </a></li>
+												<li><a href=""> Registry Part </a></li>
+												<li><a href="contribution.html"> Contribution </a></li>
+												<li><a href=""> Judging Form </a></li>
+												<li><a href=""> Financing </a></li>
+												<li><a href=""> Acknowledgement </a></li>
 											</ul>
 										</td>
 										<td style="width:179px">
 											<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
 											<ul class="menu-list">
-												<li url="pp_overview.html" page-height="1350" is-special="True"> Over View </li>
-												<li url="policy.html" page-height="6141" is-special="True"> Policy &amp; Solution</li>
-												<li> Research &amp; Solution</li>
-												<li> Meet Ups </li>
-												<li url="social_media.html" page-height="1773" is-special="True"> Social Media </li>
-												<li url="collaborations.html" page-height="1851" is-special="True"> Collabrations </li>
-												<li> Entrepreneurship </li>
-												<li url="super_brochure.html" page-height="1348" is-special="False"> Super Brochure </li>
+												<li><a href="pp_overview.html"> Over View </a></li>
+												<li><a href="policy.html"> Policy &amp; Solution </a></li>
+												<li><a href=""> Research &amp; Solution </a></li>
+												<li><a href=""> Meet Ups </a></li>
+												<li><a href="social_media.html"> Social Media </a></li>
+												<li><a href="collaborations.html"> Collabrations </a></li>
+												<li><a href=""> Entrepreneurship </a></li>
+												<li><a href="super_brochure.html"> Super Brochure </a></li>
 											</ul>
 										</td>
 										<td style="width:118px">
 											<span class="menu-tag"> TEAM </span>
 											<ul class="menu-list">
-												<li url="team_member.html" page-height="4557" is-special="True"> Team Member </li>
-												<li> Attributions </li>
-												<li> Team Identity </li>
-												<li url="contact_us.html" page-height="483" is-special="False"> Contact Us </li>
-												<li> Offical Team Profile </li>
+												<li><a href="team_member.html"> Team Member </a></li>
+												<li><a href=""> Attributions </a></li>
+												<li><a href=""> Team Identity </a></li>
+												<li><a href="contact_us.html"> Contact Us </a></li>
+												<li><a href=""> Offical Team Profile </a></li>
 											</ul>
 										</td>
 										<td style="width:90px">
 											<span class="menu-tag"> SAFETY </span>
 											<ul class="menu-list">
-												<li url="safety.html" page-height="2034" is-special="True"> Safety </li>
+												<li><a href=""safety.html""> Safety </a></li>
 											</ul>
 										</td>
 									</tr>
@@ -145,14 +104,6 @@
 					<div class="team_logo"></div>
 					<div class="clear"> </div>
 				</div>
-			</div>
-
-			<!---        黑色遮罩层       -->
-			<div class="container-decorator">
-				<div class="container-decorator-shade"></div>
-				<div class="container-decorator-content"></div>
-			</div>
-			<!---        黑色遮罩层       -->
 
 			<div class="content-container">
 				<div class="main-container">
