@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<title>iGEM - Champion Park</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/social_media.css">
+		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			function setElementSize() {	//动态设置各元素尺寸
+				var doc_width = $(document).width();
+				var header_width = doc_width * 0.4887;
+				var footer_width = doc_width * 0.1541;
+
+				$(".banner").css('min-height', header_width);	//设置header背景图片高度
+				$(".footer").css('min-height', footer_width);		//设置footer背景图片高度
+				$(".main-container").css('margin-top', -(header_width-175));	//设置遮罩层高度
+			}
+
+			$(function($) {
+				setElementSize();
+
+				/*   下拉菜单 */
+				$(".menu-table td").bind("mouseover", function() {	
+					$(this).children(".menu-list").slideDown();
+				});
+				$(".menu-table td").bind("mouseleave", function() {
+					$(this).children(".menu-list").slideUp();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<!-- <img src="./resources/igem_header_image.png" width="100%" height="100%"/> -->
+				<div class="banner">
+					<div class="clear"> </div>
+					<div class="menu">
+						<div class="menu-bar">
+							<table class="menu-table">
+								<tbody>
+									<tr>
+										<td style="width:63px">
+											<span class="menu-tag" href="#"> HOME </span>
+											</ul>
+										</td>
+										<td style="width:92px">
+											<span class="menu-tag"> PROJECT </span>
+											<ul class="menu-list">
+												<li><a href=""> Over View </a></li>
+												<li><a href=""> Notebook </a></li>
+												<li><a href=""> Protocols </a></li>
+												<li><a href=""> Design </a></li>
+											</ul>
+										</td>
+										<td style="width:125px">
+											<span class="menu-tag" style="border-bottom:3px solid #a4e9f9;"> ACHIEVEMENT </span>
+											<ul class="menu-list">
+												<li><a href=""> Results </a></li>
+												<li><a href=""> Registry Part </a></li>
+												<li><a href="contribution.html"> Contribution </a></li>
+												<li><a href=""> Judging Form </a></li>
+												<li><a href=""> Financing </a></li>
+												<li><a href=""> Acknowledgement </a></li>
+											</ul>
+										</td>
+										<td style="width:179px">
+											<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
+											<ul class="menu-list">
+												<li><a href="pp_overview.html"> Over View </a></li>
+												<li><a href="policy.html"> Policy &amp; Solution </a></li>
+												<li><a href=""> Research &amp; Solution </a></li>
+												<li><a href=""> Meet Ups </a></li>
+												<li><a href="social_media.html"> Social Media </a></li>
+												<li><a href="collaborations.html"> Collabrations </a></li>
+												<li><a href=""> Entrepreneurship </a></li>
+												<li><a href="super_brochure.html"> Super Brochure </a></li>
+											</ul>
+										</td>
+										<td style="width:118px">
+											<span class="menu-tag"> TEAM </span>
+											<ul class="menu-list">
+												<li><a href="team_member.html"> Team Member </a></li>
+												<li><a href=""> Attributions </a></li>
+												<li><a href=""> Team Identity </a></li>
+												<li><a href="contact_us.html"> Contact Us </a></li>
+												<li><a href=""> Offical Team Profile </a></li>
+											</ul>
+										</td>
+										<td style="width:90px">
+											<span class="menu-tag"> SAFETY </span>
+											<ul class="menu-list">
+												<li><a href=""safety.html""> Safety </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="igem_logo"></div>
+					<div class="team_logo"></div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="main-container">
+				<div class="xx-container">
+					<div class="xx-wrapper">
+						<div class="xx-content-container xx-content-container-1 bg-shade">
+							<div class="xx-content">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="team_info">
+					Team Email: scut-champion-park@hotmail.com <br/><br/>
+					Address: School of Bioscience &amp; Bioengineering <br/>
+					South China University of Technology, Building B6 Guangzhou<br/>
+					Higher Education Mega Centre, Panyu District,<br/>
+					Guangzhou, China <br/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

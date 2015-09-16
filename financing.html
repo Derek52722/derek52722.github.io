@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<title>iGEM - Champion Park</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/financing.css">
+		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			function setElementSize() {	//动态设置各元素尺寸
+				var doc_width = $(document).width();
+				var header_width = doc_width * 0.4887;
+				var footer_width = doc_width * 0.1541;
+
+				$(".banner").css('min-height', header_width);	//设置header背景图片高度
+				$(".footer").css('min-height', footer_width);		//设置footer背景图片高度
+				$(".main-container").css('margin-top', -(header_width-175));	//设置遮罩层高度
+			}
+
+			$(function($) {
+				setElementSize();
+
+				/*   下拉菜单 */
+				$(".menu-table td").bind("mouseover", function() {	
+					$(this).children(".menu-list").slideDown();
+				});
+				$(".menu-table td").bind("mouseleave", function() {
+					$(this).children(".menu-list").slideUp();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<!-- <img src="./resources/igem_header_image.png" width="100%" height="100%"/> -->
+				<div class="banner">
+					<div class="clear"> </div>
+					<div class="menu">
+						<div class="menu-bar">
+							<table class="menu-table">
+								<tbody>
+									<tr>
+										<td style="width:63px">
+											<span class="menu-tag" href="#"> HOME </span>
+											</ul>
+										</td>
+										<td style="width:92px">
+											<span class="menu-tag"> PROJECT </span>
+											<ul class="menu-list">
+												<li><a href=""> Over View </a></li>
+												<li><a href=""> Notebook </a></li>
+												<li><a href=""> Protocols </a></li>
+												<li><a href=""> Design </a></li>
+											</ul>
+										</td>
+										<td style="width:125px">
+											<span class="menu-tag" style="border-bottom:3px solid #a4e9f9;"> ACHIEVEMENT </span>
+											<ul class="menu-list">
+												<li><a href=""> Results </a></li>
+												<li><a href=""> Registry Part </a></li>
+												<li><a href="contribution.html"> Contribution </a></li>
+												<li><a href=""> Judging Form </a></li>
+												<li><a href=""> Financing </a></li>
+												<li><a href=""> Acknowledgement </a></li>
+											</ul>
+										</td>
+										<td style="width:179px">
+											<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
+											<ul class="menu-list">
+												<li><a href="pp_overview.html"> Over View </a></li>
+												<li><a href="policy.html"> Policy &amp; Solution </a></li>
+												<li><a href=""> Research &amp; Solution </a></li>
+												<li><a href=""> Meet Ups </a></li>
+												<li><a href="social_media.html"> Social Media </a></li>
+												<li><a href="collaborations.html"> Collabrations </a></li>
+												<li><a href=""> Entrepreneurship </a></li>
+												<li><a href="super_brochure.html"> Super Brochure </a></li>
+											</ul>
+										</td>
+										<td style="width:118px">
+											<span class="menu-tag"> TEAM </span>
+											<ul class="menu-list">
+												<li><a href="team_member.html"> Team Member </a></li>
+												<li><a href=""> Attributions </a></li>
+												<li><a href=""> Team Identity </a></li>
+												<li><a href="contact_us.html"> Contact Us </a></li>
+												<li><a href=""> Offical Team Profile </a></li>
+											</ul>
+										</td>
+										<td style="width:90px">
+											<span class="menu-tag"> SAFETY </span>
+											<ul class="menu-list">
+												<li><a href=""safety.html""> Safety </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="igem_logo"></div>
+					<div class="team_logo"></div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="main-container">
+				<!---        黑色遮罩层       -->
+				<div class="container-decorator-shade"></div>
+				<!---        黑色遮罩层       -->
+
+				<div class="finan-container bg-shade">
+					<div class="finan-wrapper">
+						<div class="finan-content-container finan-content-container-1 bg-radius bg-shallow-shade">
+							<div class="finan-content">
+								<h1 class="finan-title"> Financing </h1>
+								<p class="finan-main-content">
+									This is the third year that our school (South China University of Technology) teams participate in the IGEM. Compared to the previous two years, this year there will be three teams to participate IGEM in the name of South China University of Technology. Now, IGEM are very influential in our school, and also trained many students'​​interest and ability. Through the first two years' experience, we have learned that this game is not only need to invest a lot of energy, but also a lot of money. This year because of the number of teams is increasing, the supports from College for each team has a certain reduction in funding. In the early preparation, funding becomes the team's biggest problem. In order to ensure adequate funding, we have made various efforts, and got the support from many parties. Finally, we can come to Boston to attend the 2015 Giant Jamboree, and to communicate with the teachers and students from all over the world.
+								</p>
+								<p class="finan-main-content">
+									At last, we would like to sincerely thank SCUT, graduate school of SCUT, our college, the organizations and individuals who helped us in the process.
+								</p>
+							</div>
+						</div>
+						<div class="finan-content-container finan-content-container-2">
+							<div class="clear"></div>
+							<div class="finan-content">
+								<div class="finan-pie finan-pie-1"></div>
+								<div class="bg-shallow-shade bg-radius finan-pie-intro-1">
+									<h2><span class="finan-info-img finan-info-img-1"></span> Receipts：250,000 <span class="yen"> &yen;</span></h2>
+									<p class="finan-main-content finan-main-content-p">
+										School of Bioscience &amp; Bioengineering of SCUT <br/>100,000<span class="yen"> &yen;</span><br/>
+										School of Light Industry and Food Science of SCUT  <br/>30,000<span class="yen"> &yen;</span><br/>
+										School of Design of SCUT  20,000<span class="yen"> &yen;</span><br/>
+										Pre-incubator for Innovative Drug &amp; Medicine of <br/>SCUT  60,000<span class="yen"> &yen;</span><br/>
+										Students Innovation and Entrepreneurship Practice <br/>Base of SCUT  10,000<span class="yen"> &yen;</span><br/>
+										Graduate School of SCUT  30,000<span class="yen"> &yen;</span><br/>
+									</p>	
+								</div>
+							</div>
+							<div class="finan-content">
+								<div class="finan-pie finan-pie-2"></div>
+								<div class=" bg-shallow-shade bg-radius finan-pie-intro-2">
+									<h2><span class="finan-info-img finan-info-img-2"></span> Receipts：251,200 <span class="yen"> &yen;</span></h2>
+									<p class="finan-main-content finan-main-content-p">
+										IGEM Registration+Attendance fees  59,900<span class="yen"> &yen;</span><br/>
+										Human Practice 12,000<span class="yen"> &yen;</span><br/>
+										Accomodation+Travel costs  95,000<span class="yen"> &yen;</span><br/>
+										Lab Work 67,800<span class="yen"> &yen;</span><br/>
+										Others 16,500<span class="yen"> &yen;</span><br/>
+									</p>	
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="finan-content-container finan-content-container-3">
+							<div class="finan-content  bg-shallow-shade bg-radius">
+								<h1 class="finan-title"> Sponsors </h1>
+								<p class="finan-main-content finan-main-content-spon"><span class="finan-info-img finan-info-img-3"></span> <span class="finan-main-content-spon-span">School of Bioscience &amp; Bioengineering of SCUT </span></p>
+								<p class="finan-main-content finan-main-content-spon"><span class="finan-info-img finan-info-img-4"></span> <span class="finan-main-content-spon-span">Pre-incubator for Innovative Drug &amp; Medicine of SCUT </span></p>
+								<p class="finan-main-content finan-main-content-spon"><span class="finan-info-img finan-info-img-5"></span> <span class="finan-main-content-spon-span">Students Innovation and Entrepreneurship Practice Base of SCUT </span></p>
+								<p class="finan-main-content finan-main-content-spon"><span class="finan-info-img finan-info-img-6"></span> <span class="finan-main-content-spon-span">Graduate School of SCUT </span></p>
+								<p class="finan-main-content finan-main-content-spon"><span class="finan-info-img finan-info-img-7"></span> <span class="finan-main-content-spon-span">School of Light Industry and Food Science of SCUT </span></p>
+								<p class="finan-main-content finan-main-content-spon"><span class="finan-info-img finan-info-img-8"></span> <span class="finan-main-content-spon-span">School of Design of SCUT </span></p>
+							</div>
+						</div>
+						<div class="finan-bottom"> </div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="team_info">
+					Team Email: scut-champion-park@hotmail.com <br/><br/>
+					Address: School of Bioscience &amp; Bioengineering <br/>
+					South China University of Technology, Building B6 Guangzhou<br/>
+					Higher Education Mega Centre, Panyu District,<br/>
+					Guangzhou, China <br/>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
