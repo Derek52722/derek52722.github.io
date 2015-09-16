@@ -6,17 +6,16 @@
 		<meta http-equiv="cache-control" content="no-cache">
 		<title>iGEM - Champion Park</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link rel="stylesheet" type="text/css" href="css/social_media.css">
+		<link rel="stylesheet" type="text/css" href="css/igem.css">
 		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript">
 			function setElementSize() {	//动态设置各元素尺寸
 				var doc_width = $(document).width();
-				var header_width = doc_width * 0.4887;
-				var footer_width = doc_width * 0.1541;
+				var header_height = doc_width * 0.5811;
+				var footer_height = doc_width * 0.1541;
 
-				$(".banner").css('min-height', header_width);	//设置header背景图片高度
-				$(".footer").css('min-height', footer_width);		//设置footer背景图片高度
-				$(".main-container").css('margin-top', -(header_width-175));	//设置遮罩层高度
+				$(".igem-banner").css('min-height', header_height);	//设置header背景图片高度
+				$(".footer").css('min-height', footer_height);		//设置footer背景图片高度
 			}
 
 			$(function($) {
@@ -36,7 +35,7 @@
 		<div class="container">
 			<div class="header">
 				<!-- <img src="./resources/igem_header_image.png" width="100%" height="100%"/> -->
-				<div class="banner">
+				<div class="igem-banner">
 					<div class="clear"> </div>
 					<div class="menu">
 						<div class="menu-bar">
@@ -101,15 +100,25 @@
 						</div>
 					</div>
 					<div class="igem_logo"></div>
-					<div class="team_logo"></div>
 					<div class="clear"> </div>
 				</div>
 			</div>
 
-			<div class="content-container">
-				<div class="main-container">
-					<div class="content">
-						
+			<div class="igem-main-container">
+				<div class="igem-container">
+					<div class="igem-wrapper">
+						<div class="igem-content-container bg-shade">
+							<img src="resources/home_abstract.png" width="100%" height="100%">
+							<div class="igem-content bg-shallow-shade bg-radius">
+								<p class="igem-main-content">
+									Currently, the overuse of antibiotics has not been effectively regulated in China. A survey from 4152 Internet users of 31 provinces and autonomous regions in China shows that 74% investigation families have been or have equipped with antibiotics. Moreover, the application rate of antibiotics in hospitalized patients is 80% in China, far more than the 
+									international standards (30%). <br/><br/>
+									In order to solve the problem of food safety caused by the abuse of antibiotics, our group constructed the tetracycline inducible expression system. And through plasmid mediated, the system was transfected into Escherichia coli TOP10 and GS115 Pichia pastoris. It can generate a rtTA transcription activation factor in cells. RtTA combining with
+									tetracycline antibiotics can activate the fluorescent protein expression system, which can instructs the tetracycline class of antibiotics by fluorescence detection. <br/><br/>
+									Click here to see the complete project.
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
