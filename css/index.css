@@ -72,13 +72,17 @@ table {
 .menu-table td span{
 	color: #1cc9f1;
   	display: inline-block;
-  	font-size: 1.7em;
+  	font-size: 17px;
   	height: 32px;
   	margin: 0;
   	padding: 0;
 }
 .menu-table td span:hover {
 	cursor: pointer;
+}
+.menu-table a{
+	color: #1cc9f1;
+	display: block;
 }
 .menu-list {
 	margin:-4px 0 0 0;
@@ -90,24 +94,17 @@ table {
 .menu-list li a{
 	color: #1b1f3a;
 	display: block;
-	text-decoration:none;
 	text-align: center;
 	line-height: 20px;
 	margin-bottom: 2px;
 	background-color: #a4e9f9;
-	font-size: 1.2em;
+	font-size: 12px;
 	z-index: 333;
 }
 .menu-list li a:hover{
 	color: #77dff7;
 	background-color: #1b1f3a;
 	cursor: pointer;
-}
-.menu-list li a {
-	
-}
-.menu-list li a:hover {
-	
 }
 /* ----黑色遮罩层----- */
 .container-decorator {

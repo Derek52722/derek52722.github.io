@@ -1,96 +1,208 @@
-<html>
+<!DOCTYPE HTML>
+<html lang='en'>
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<title>iGEM - Champion Park</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/safety.css">
+		<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			function setElementSize() {	//动态设置各元素尺寸
+				var doc_width = $(document).width();
+				var header_width = doc_width * 0.4887;
+				var footer_width = doc_width * 0.1541;
+
+				$(".banner").css('min-height', header_width);	//设置header背景图片高度
+				$(".footer").css('min-height', footer_width);		//设置footer背景图片高度
+				$(".main-container").css('margin-top', -(header_width-175));	//设置遮罩层高度
+			}
+
+			$(function($) {
+				setElementSize();
+
+				/*   下拉菜单 */
+				$(".menu-table td").bind("mouseover", function() {	
+					$(this).children(".menu-list").slideDown();
+				});
+				$(".menu-table td").bind("mouseleave", function() {
+					$(this).children(".menu-list").slideUp();
+				});
+			});
+		</script>
 	</head>
 	<body>
-		<div class="safe-main-container">
-			<div class="safe-container">
-				<div class="safe-wrapper">
-					<div class="safe-content-container safe-content-container-1">
-						<div class="safe-content">
-							<h1 class="safe-title"> First Part&nbsp;&nbsp;&nbsp;&nbsp;Laboratory Safety </h1>
-							<p class="safe-main-content">
-								Biological laboratory safety is divided into four levels, and the safety of our team belongs to the first level. In the daily scientific research, we should pay attention to operation specifications and the safety of equipments. <br/><br/>
-
-								1. When it comes to the operations related to specimen containers, We should pay attention to that specimen containers may be glasses, and it is best to use the plastic products. Specimen containers should not leak after covering the lid or plug correctly. There should not be residue outside of the container. There should be labels on the containers which can be used to identify easily. When the specimens transmit in the facilities, in order to avoid accidental leakage, we should use the secondary container such as box and should fixed it on the shelf to keep it upright. The secondary container should be made of metal or plastic, and should be resistant to chemical disinfectants, high pressure and high temperature. It is better to have a washer at the sealing mouth and remove contamination regularly. <br/><br/>
-
-								2. When we use the biological safety cabinet, we consult the national standards and related reference, explain the usage of the biological safety cabinet and its limitations to all impossible users. Hand out the written rules, security manual and the operation manual to all staff. To be clear is that when there is a spill, breakage or bad operation，the biological safety cabinet can no longer be able to protect the operator. <br/><br/>
-
-								3. In laboratory, don't smoke and place the food, beverage and other substances which are possible contact human by hand-mouth pathway. Don't use laboratory's refrigerator for food storage. <br/><br/>
-
-								4. Keep checking the cleaning device for emergency. <br/><br/>
-
-								5. Keep checking the fire extinguisher.
-							</p>
+		<div class="container">
+			<div class="header">
+				<!-- <img src="./resources/igem_header_image.png" width="100%" height="100%"/> -->
+				<div class="banner">
+					<div class="clear"> </div>
+					<div class="menu">
+						<div class="menu-bar">
+							<table class="menu-table">
+								<tbody>
+									<tr>
+										<td style="width:63px">
+											<span class="menu-tag"><a href="igem.html"> HOME </a></span>
+											</ul>
+										</td>
+										<td style="width:92px">
+											<span class="menu-tag"> PROJECT </span>
+											<ul class="menu-list">
+												<li><a href=""> Over View </a></li>
+												<li><a href=""> Protocols </a></li>
+												<li><a href=""> Design </a></li>
+											</ul>
+										</td>
+										<td style="width:125px">
+											<span class="menu-tag"> ACHIEVEMENT </span>
+											<ul class="menu-list">
+												<li><a href=""> Results </a></li>
+												<li><a href="registry_part.html"> Registry Part </a></li>
+												<li><a href="contribution.html"> Contribution </a></li>
+												<li><a href=""> Judging Form </a></li>
+												<li><a href="financing.html"> Financing </a></li>
+												<li><a href=""> Acknowledgement </a></li>
+											</ul>
+										</td>
+										<td style="width:179px">
+											<span class="menu-tag"> POCLICY &amp; PRACTICES </span>
+											<ul class="menu-list">
+												<li><a href="pp_overview.html"> Over View </a></li>
+												<li><a href="policy.html"> Policy &amp; Solution </a></li>
+												<li><a href=""> Research &amp; Solution </a></li>
+												<li><a href=""> Meet Ups </a></li>
+												<li><a href="social_media.html"> Social Media </a></li>
+												<li><a href="collaborations.html"> Collabrations </a></li>
+												<li><a href=""> Entrepreneurship </a></li>
+												<li><a href="super_brochure.html"> Super Brochure </a></li>
+											</ul>
+										</td>
+										<td style="width:118px">
+											<span class="menu-tag"> TEAM </span>
+											<ul class="menu-list">
+												<li><a href="team_member.html"> Team Member </a></li>
+												<li><a href=""> Attributions </a></li>
+												<li><a href=""> Team Identity </a></li>
+												<li><a href="contact_us.html"> Contact Us </a></li>
+												<li><a href=""> Offical Team Profile </a></li>
+											</ul>
+										</td>
+										<td style="width:90px">
+											<span class="menu-tag" style="border-bottom:3px solid #a4e9f9;"> SAFETY </span>
+											<ul class="menu-list">
+												<li><a href="safety.html"> Safety </a></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
-					<div class="safe-content-container  safe-content-container-2">
-						<div class="safe-content">
-							<h1 class="safe-title"> Second Part&nbsp;&nbsp;&nbsp;&nbsp;Experiment security </h1>
-							<p class="safe-main-content">
-								When you enter the laboratory, you should operate under the experimental requirements strictly, including: <br/><br/>
-								1. The operation of a centrifuge <br/>
-								    &nbsp;&nbsp;1)	Good mechanical performance of Instruments is the premise of microbial safety; <br/>
-								    &nbsp;&nbsp;2)	Operate the centrifuge in accordance with the manual. <br/>
-								    &nbsp;&nbsp;3)	The height of the place where the centrifuge is placed should make all the staffs be able to see the interior. Ensure that they can place the cross shaft and centrifugal barrel rightly. <br/>
-								    &nbsp;&nbsp;4)	Centrifugal pipe and the centrifugal specimen containers shall be made of thick walled glass or plastic. check the damage of them before use. <br/>
-								    &nbsp;&nbsp;5)	The tubes and specimen containers used for centrifugal should be covered tightly (It is best to use the screw cap) . <br/>
-								    &nbsp;&nbsp;6)	Must load, balance, and open the centrifugal barrel in a biological safety cabinet. <br/>
-								    &nbsp;&nbsp;7)	The centrifugal barrels and cross shaft should be matched by weight, and correct balance after the loading of centrifugal pipe. <br/>
-								    &nbsp;&nbsp;8)	Operation manual should give the distance from the liquid level to the orifice of tube. <br/>
-								    &nbsp;&nbsp;9)	Empty centrifugal barrel should be balanced with distilled water or ethanol(isopropyl alcohol,  70%). Salt solution or hypochlorite solution will corrode metal, so cannot be used. <br/>
-								    &nbsp;&nbsp;10)	For microbial risk level 3 and level 4 microorganism, must use the centrifugal barrels which can be sealed(safety glasses). <br/>
-								    &nbsp;&nbsp;11)	When using a fixed Angle the centrifugal rotor, must be careful that the centrifuge tubes should not be too full, otherwise it will lead to leakage. <br/>
-								    &nbsp;&nbsp;12)	Should check that if the cavity wall in the centrifuge rotor parts is contaminated or dirty every day. If it is, should reassess centrifugal operation specification. <br/>
-								    &nbsp;&nbsp;13)	Should check whether there are corrosion or small cracks in centrifugal rotor and centrifugal barrel every day. <br/>
-								    &nbsp;&nbsp;14)	After using, remove pollution of the centrifugal barrel, centrifuge and rotor cavity.  <br/>
-								    &nbsp;&nbsp;15)	After using, the centrifugal barrel should be inverted to dry theequilibrium liquid. <br/><br/>
+					<div class="igem_logo"></div>
+					<div class="team_logo"></div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="main-container">
+				<div class="safe-container">
+					<div class="safe-wrapper">
+						<div class="safe-content-container safe-content-container-1 bg-radius bg-shade">
+							<div class="safe-content">
+								<h1 class="safe-title"> First Part&nbsp;&nbsp;&nbsp;&nbsp;Laboratory Safety </h1>
+								<p class="safe-main-content">
+									Biological laboratory safety is divided into four levels, and the safety of our team belongs to the first level. In the daily scientific research, we should pay attention to operation specifications and the safety of equipments. <br/><br/>
 
-								2. The use of Homogenate, shaking table, mixer and ultrasonic processor <br/>
-								    &nbsp;&nbsp;1)	Can't use household (kitchen) homogenate, it may leak or release aerosols. It is safety to use special laboratory stirrer and slaker. <br/>
-								    &nbsp;&nbsp;2)	The lid, glass or bottle should keep the normal state, no cracks or deformation. The cover should be able to block, gasket should be in the normal state. <br/>
-								    &nbsp;&nbsp;3)	When use the homogenate, shaking table and ultrasonic processors, the pressure in the container will rise, Aerosols containing infectious material may escape from the lid. Because the glasses may be broken and release infectious substances which will hurt the operator. It is recommended to use plastic containers, especially the polytetrafluoroethylene (PTFE) container. <br/>
-								    &nbsp;&nbsp;4)	When use the homogenate, shaking table and ultrasonic processors, should cover equipment with a firmed transparent plastic box, and disinfect it after using. Possibly, these instruments can be covered with plastic when operated in biological safety cabinet. <br/>
-								    &nbsp;&nbsp;5)	After operation, should open the containers in biological safety cabinet. <br/>
-								    &nbsp;&nbsp;6)	Provide hearing protection to the users of ultrasonic processor. <br/><br/>
+									1. When it comes to the operations related to specimen containers, We should pay attention to that specimen containers may be glasses, and it is best to use the plastic products. Specimen containers should not leak after covering the lid or plug correctly. There should not be residue outside of the container. There should be labels on the containers which can be used to identify easily. When the specimens transmit in the facilities, in order to avoid accidental leakage, we should use the secondary container such as box and should fixed it on the shelf to keep it upright. The secondary container should be made of metal or plastic, and should be resistant to chemical disinfectants, high pressure and high temperature. It is better to have a washer at the sealing mouth and remove contamination regularly. <br/><br/>
 
-								3. The maintenance and use of refrigerators and incubator  <br/>
-								    &nbsp;&nbsp;1)	Refrigerator, low temperature refrigerators and dry ice freezers should be defrosted and cleaned regularly. All the goods in the process of storing such as broken ampoule and tubes should be cleared. When cleaning, should wear thick rubber gloves and face protection. To internal surface be disinfected after cleaning. <br/>
-								    &nbsp;&nbsp;2)	all the containers stored in the refrigerator should be clearly marked in the scientific name, the date and name of owner. Unmarked or old items should be sterilized by high pressure and discarded. <br/>
-								    &nbsp;&nbsp;3)	Should save a list of frozen items. <br/>
-								    &nbsp;&nbsp;4)	Unless there are explosion-proof measures, otherwise don't place flammable solution in the refrigerator. There should be a tips on the fridge door to indicate this. <br/>
-								    &nbsp;&nbsp;5)	The maximum temperature of the constant temperature incubator is 60&#176;C. <br/><br/>
+									2. When we use the biological safety cabinet, we consult the national standards and related reference, explain the usage of the biological safety cabinet and its limitations to all impossible users. Hand out the written rules, security manual and the operation manual to all staff. To be clear is that when there is a spill, breakage or bad operation，the biological safety cabinet can no longer be able to protect the operator. <br/><br/>
 
-								4. Disposed the experiment waste properly <br/>
-								    &nbsp;&nbsp;1)	The experimental plate should be discarded after boil disinfection. <br/>
-								    &nbsp;&nbsp;2)	The Experimental garbage should be sorted, poison and infectious substances should contact professionals to dispose them properly. <br/>
-								    &nbsp;&nbsp;3)	Glass instruments and sharp garbage should be marked clearly, avoid injuring people who recycle the garbage. <br/><br/>
-							</p>
+									3. In laboratory, don't smoke and place the food, beverage and other substances which are possible contact human by hand-mouth pathway. Don't use laboratory's refrigerator for food storage. <br/><br/>
+
+									4. Keep checking the cleaning device for emergency. <br/><br/>
+
+									5. Keep checking the fire extinguisher.
+								</p>
+							</div>
+						</div>
+						<div class="safe-content-container  safe-content-container-2 bg-radius bg-shade">
+							<div class="safe-content">
+								<h1 class="safe-title"> Second Part&nbsp;&nbsp;&nbsp;&nbsp;Experiment security </h1>
+								<p class="safe-main-content">
+									When you enter the laboratory, you should operate under the experimental requirements strictly, including: <br/><br/>
+									1. The operation of a centrifuge <br/>
+									    &nbsp;&nbsp;1)	Good mechanical performance of Instruments is the premise of microbial safety; <br/>
+									    &nbsp;&nbsp;2)	Operate the centrifuge in accordance with the manual. <br/>
+									    &nbsp;&nbsp;3)	The height of the place where the centrifuge is placed should make all the staffs be able to see the interior. Ensure that they can place the cross shaft and centrifugal barrel rightly. <br/>
+									    &nbsp;&nbsp;4)	Centrifugal pipe and the centrifugal specimen containers shall be made of thick walled glass or plastic. check the damage of them before use. <br/>
+									    &nbsp;&nbsp;5)	The tubes and specimen containers used for centrifugal should be covered tightly (It is best to use the screw cap) . <br/>
+									    &nbsp;&nbsp;6)	Must load, balance, and open the centrifugal barrel in a biological safety cabinet. <br/>
+									    &nbsp;&nbsp;7)	The centrifugal barrels and cross shaft should be matched by weight, and correct balance after the loading of centrifugal pipe. <br/>
+									    &nbsp;&nbsp;8)	Operation manual should give the distance from the liquid level to the orifice of tube. <br/>
+									    &nbsp;&nbsp;9)	Empty centrifugal barrel should be balanced with distilled water or ethanol(isopropyl alcohol,  70%). Salt solution or hypochlorite solution will corrode metal, so cannot be used. <br/>
+									    &nbsp;&nbsp;10)	For microbial risk level 3 and level 4 microorganism, must use the centrifugal barrels which can be sealed(safety glasses). <br/>
+									    &nbsp;&nbsp;11)	When using a fixed Angle the centrifugal rotor, must be careful that the centrifuge tubes should not be too full, otherwise it will lead to leakage. <br/>
+									    &nbsp;&nbsp;12)	Should check that if the cavity wall in the centrifuge rotor parts is contaminated or dirty every day. If it is, should reassess centrifugal operation specification. <br/>
+									    &nbsp;&nbsp;13)	Should check whether there are corrosion or small cracks in centrifugal rotor and centrifugal barrel every day. <br/>
+									    &nbsp;&nbsp;14)	After using, remove pollution of the centrifugal barrel, centrifuge and rotor cavity.  <br/>
+									    &nbsp;&nbsp;15)	After using, the centrifugal barrel should be inverted to dry theequilibrium liquid. <br/><br/>
+
+									2. The use of Homogenate, shaking table, mixer and ultrasonic processor <br/>
+									    &nbsp;&nbsp;1)	Can't use household (kitchen) homogenate, it may leak or release aerosols. It is safety to use special laboratory stirrer and slaker. <br/>
+									    &nbsp;&nbsp;2)	The lid, glass or bottle should keep the normal state, no cracks or deformation. The cover should be able to block, gasket should be in the normal state. <br/>
+									    &nbsp;&nbsp;3)	When use the homogenate, shaking table and ultrasonic processors, the pressure in the container will rise, Aerosols containing infectious material may escape from the lid. Because the glasses may be broken and release infectious substances which will hurt the operator. It is recommended to use plastic containers, especially the polytetrafluoroethylene (PTFE) container. <br/>
+									    &nbsp;&nbsp;4)	When use the homogenate, shaking table and ultrasonic processors, should cover equipment with a firmed transparent plastic box, and disinfect it after using. Possibly, these instruments can be covered with plastic when operated in biological safety cabinet. <br/>
+									    &nbsp;&nbsp;5)	After operation, should open the containers in biological safety cabinet. <br/>
+									    &nbsp;&nbsp;6)	Provide hearing protection to the users of ultrasonic processor. <br/><br/>
+
+									3. The maintenance and use of refrigerators and incubator  <br/>
+									    &nbsp;&nbsp;1)	Refrigerator, low temperature refrigerators and dry ice freezers should be defrosted and cleaned regularly. All the goods in the process of storing such as broken ampoule and tubes should be cleared. When cleaning, should wear thick rubber gloves and face protection. To internal surface be disinfected after cleaning. <br/>
+									    &nbsp;&nbsp;2)	all the containers stored in the refrigerator should be clearly marked in the scientific name, the date and name of owner. Unmarked or old items should be sterilized by high pressure and discarded. <br/>
+									    &nbsp;&nbsp;3)	Should save a list of frozen items. <br/>
+									    &nbsp;&nbsp;4)	Unless there are explosion-proof measures, otherwise don't place flammable solution in the refrigerator. There should be a tips on the fridge door to indicate this. <br/>
+									    &nbsp;&nbsp;5)	The maximum temperature of the constant temperature incubator is 60&#176;C. <br/><br/>
+
+									4. Disposed the experiment waste properly <br/>
+									    &nbsp;&nbsp;1)	The experimental plate should be discarded after boil disinfection. <br/>
+									    &nbsp;&nbsp;2)	The Experimental garbage should be sorted, poison and infectious substances should contact professionals to dispose them properly. <br/>
+									    &nbsp;&nbsp;3)	Glass instruments and sharp garbage should be marked clearly, avoid injuring people who recycle the garbage. <br/><br/>
+								</p>
+							</div>
+						</div>
+						<div class="safe-content-container safe-content-container-3 bg-radius bg-shade">
+							<div class="safe-content">
+								<h1 class="safe-title"> Third Part&nbsp;&nbsp;&nbsp;&nbsp;Safety Training </h1>
+								<p class="safe-main-content">
+									1. The training include: Laws, regulations, measures, standards related to biological safety; our laboratory biological safety manual; biological safety management system; emergency plan; emergency reporting and disposal process; biological safety risk assessment; biological safety operation specification; equipment use, maintenance; proper use of personal protective equipment; the collection, transportation, storage, use, destruction of bacteria (drug) strains and samples; disinfection and sterilization; infectious waste disposal, first-aid; etc. <br/><br/>
+
+									2. Organize personnel's (including laboratory management personnel, technical personnel, sample delivery personnel, cleaner, etc.) biological safety training and assessment. <br/><br/>
+
+									3. The personnel who enter the laboratory (including education, practice and other students) accept the necessary biological safety training by their department according to the safety risk of their work. All work should be under the guidance of teachers, high risk work should not be engaged in until the personnel are being trained.  <br/><br/>
+								</p>
+							</div>
+						</div>
+						<div class="safe-content-container safe-content-container-4 bg-radius bg-shade">
+							<div class="safe-content">
+								<h1 class="safe-title"> Fourth Part&nbsp;&nbsp;&nbsp;&nbsp;Parts Safety </h1>
+								<p class="safe-main-content">
+									According to the standard of biological threat classification of iGEM, the seven parts which is constructed by the standard, have no risk to the human body, nor virulence factors. We work in a standard molecular biology laboratory in accordance with laboratory experiments, and we can ensure the biological safety. <br/>
+									All the chassis organisms including Escherichia coli and yeast used in the experiment will be inactivated by high temperature in order to avoid biological pollution.<br/><br/>
+
+									For more information, please click here.
+								</p>
+							</div>
 						</div>
 					</div>
-					<div class="safe-content-container safe-content-container-3">
-						<div class="safe-content">
-							<h1 class="safe-title"> Third Part&nbsp;&nbsp;&nbsp;&nbsp;Safety Training </h1>
-							<p class="safe-main-content">
-								1. The training include: Laws, regulations, measures, standards related to biological safety; our laboratory biological safety manual; biological safety management system; emergency plan; emergency reporting and disposal process; biological safety risk assessment; biological safety operation specification; equipment use, maintenance; proper use of personal protective equipment; the collection, transportation, storage, use, destruction of bacteria (drug) strains and samples; disinfection and sterilization; infectious waste disposal, first-aid; etc. <br/><br/>
-
-								2. Organize personnel's (including laboratory management personnel, technical personnel, sample delivery personnel, cleaner, etc.) biological safety training and assessment. <br/><br/>
-
-								3. The personnel who enter the laboratory (including education, practice and other students) accept the necessary biological safety training by their department according to the safety risk of their work. All work should be under the guidance of teachers, high risk work should not be engaged in until the personnel are being trained.  <br/><br/>
-							</p>
-						</div>
-					</div>
-					<div class="safe-content-container safe-content-container-4">
-						<div class="safe-content">
-							<h1 class="safe-title"> Fourth Part&nbsp;&nbsp;&nbsp;&nbsp;Parts Safety </h1>
-							<p class="safe-main-content">
-								According to the standard of biological threat classification of iGEM, the seven parts which is constructed by the standard, have no risk to the human body, nor virulence factors. We work in a standard molecular biology laboratory in accordance with laboratory experiments, and we can ensure the biological safety. <br/>
-								All the chassis organisms including Escherichia coli and yeast used in the experiment will be inactivated by high temperature in order to avoid biological pollution.<br/><br/>
-
-								For more information, please click here.
-							</p>
-						</div>
-					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="team_info">
+					Team Email: scut-champion-park@hotmail.com <br/><br/>
+					Address: School of Bioscience &amp; Bioengineering <br/>
+					South China University of Technology, Building B6 Guangzhou<br/>
+					Higher Education Mega Centre, Panyu District,<br/>
+					Guangzhou, China <br/>
 				</div>
 			</div>
 		</div>

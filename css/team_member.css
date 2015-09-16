@@ -1,79 +1,10 @@
-body {
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	font-size: 62.5%;
-	font-family: Helvetica;
-	overflow-x: hidden; 
-}
 .tm-container ul li {
 	list-style-type:none;
 }
 .clear {
 	clear: both;
 }
-/* ----黑色遮罩层----- */
-.tm-stu-container-decorator {
-	min-height: 345px;
-	margin: 0 auto;
-	position: relative;
-	left: 50%;
-	margin-left: -512px;
-	width: 997px;
-	height: 3349px;
-	background-color: #000000;
-	z-index: 0;
-
-	filter:alpha(opacity=60);  
-     -moz-opacity:0.60;  
-     -khtml-opacity: 0.60;  
-     opacity: 0.60; 
-
-     border-radius: 18px;
-     -moz-border-radius: 18px;
-     -webkit-border-radius: 18px;
-}
-.tm-ins-container-decorator {
-	position: relative;
-	left: 50%;
-	margin-left: -483px;
-	margin-top: 13px;
-	width: 995px;
-	height: 795px;
-	background-color: #000000;
-	z-index: 0;
-
-	filter:alpha(opacity=60);  
-     -moz-opacity:0.60;  
-     -khtml-opacity: 0.60;  
-     opacity: 0.60; 
-
-     border-radius: 18px;
-     -moz-border-radius: 18px;
-     -webkit-border-radius: 18px;
-}
-.tm-adv-container-decorator {
-	position: relative;
-	left: 50%;
-	margin-left: -483px;
-	margin-top: 13px;
-	width: 995px;
-	height: 387px;
-	background-color: #000000;
-	z-index: 0;
-
-	filter:alpha(opacity=60);  
-     -moz-opacity:0.60;  
-     -khtml-opacity: 0.60;  
-     opacity: 0.60; 
-
-     border-radius: 18px;
-     -moz-border-radius: 18px;
-     -webkit-border-radius: 18px;
-}
-/* ----黑色遮罩层----- */
 .tm-container {
-	margin: -4557px auto 0 auto;
 	font-family: "Microsoft YaHei"  !important;
 	text-align: center;
 	z-index: 666;

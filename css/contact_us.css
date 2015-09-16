@@ -1,13 +1,15 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-size: 62.5%;
-}
 .cs-content-container {
 	margin: 0 auto;
-	padding-top: 43px;
 	padding-bottom: 53px;
 	width: 1024px;
+	min-height: 573px;
+
+	border-bottom-left-radius: 7px;
+     -moz-border-bottom-left-radius: 7px;
+     -webkit-border-bottom-left-radius: 7px;
+     border-bottom-right-radius: 7px;
+     -moz-border-bottom-right-radius: 7px;
+     -webkit-border-bottom-right-radius: 7px;
 }
 .cs-main-content {
 	margin: 0 auto;
@@ -15,7 +17,7 @@ body {
 	text-align: left;
 }
 .cs-font {
-	font-size: 1.4em;
+	font-size: 14px;
 	font-family: "Microsoft YaHei"  !important;
 	color: #7be0f7;
 	line-height: 25px;
@@ -41,6 +43,7 @@ body {
 	margin-top: 16px;
 	margin-left: 16px;
 	display: inline-block;
+	text-align: left;
 }
 .cs-info-img {
 	background-image: url("../resources/contactus.png");
